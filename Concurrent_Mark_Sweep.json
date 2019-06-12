@@ -1,0 +1,117 @@
+{
+  "beans" : [ {
+    "name" : "java.lang:type=GarbageCollector,name=ConcurrentMarkSweep",
+    "modelerType" : "sun.management.GarbageCollectorImpl",
+    "LastGcInfo" : {
+      "GcThreadCount" : 5,
+      "duration" : 34027,
+      "endTime" : 960552829,
+      "id" : 2,
+      "memoryUsageAfterGc" : [ {
+        "key" : "Par Survivor Space",
+        "value" : {
+          "committed" : 20971520,
+          "init" : 20971520,
+          "max" : 20971520,
+          "used" : 7289904
+        }
+      }, {
+        "key" : "Compressed Class Space",
+        "value" : {
+          "committed" : 5861376,
+          "init" : 0,
+          "max" : 1073741824,
+          "used" : 5627832
+        }
+      }, {
+        "key" : "Metaspace",
+        "value" : {
+          "committed" : 55857152,
+          "init" : 0,
+          "max" : -1,
+          "used" : 54740992
+        }
+      }, {
+        "key" : "Code Cache",
+        "value" : {
+          "committed" : 30212096,
+          "init" : 2555904,
+          "max" : 251658240,
+          "used" : 29899840
+        }
+      }, {
+        "key" : "Par Eden Space",
+        "value" : {
+          "committed" : 167772160,
+          "init" : 167772160,
+          "max" : 167772160,
+          "used" : 45854968
+        }
+      }, {
+        "key" : "CMS Old Gen",
+        "value" : {
+          "committed" : 864026624,
+          "init" : 864026624,
+          "max" : 864026624,
+          "used" : 12692824
+        }
+      } ],
+      "memoryUsageBeforeGc" : [ {
+        "key" : "Par Survivor Space",
+        "value" : {
+          "committed" : 20971520,
+          "init" : 20971520,
+          "max" : 20971520,
+          "used" : 3658432
+        }
+      }, {
+        "key" : "Compressed Class Space",
+        "value" : {
+          "committed" : 5783552,
+          "init" : 0,
+          "max" : 1073741824,
+          "used" : 5491288
+        }
+      }, {
+        "key" : "Metaspace",
+        "value" : {
+          "committed" : 54497280,
+          "init" : 0,
+          "max" : -1,
+          "used" : 53293904
+        }
+      }, {
+        "key" : "Code Cache",
+        "value" : {
+          "committed" : 30015488,
+          "init" : 2555904,
+          "max" : 251658240,
+          "used" : 29576768
+        }
+      }, {
+        "key" : "Par Eden Space",
+        "value" : {
+          "committed" : 167772160,
+          "init" : 167772160,
+          "max" : 167772160,
+          "used" : 98226584
+        }
+      }, {
+        "key" : "CMS Old Gen",
+        "value" : {
+          "committed" : 864026624,
+          "init" : 864026624,
+          "max" : 864026624,
+          "used" : 15081800
+        }
+      } ],
+      "startTime" : 960518802
+    },
+    "CollectionCount" : 2,
+    "CollectionTime" : 19677,
+    "Valid" : true,
+    "MemoryPoolNames" : [ "Par Eden Space", "Par Survivor Space", "CMS Old Gen" ],
+    "Name" : "ConcurrentMarkSweep",
+    "ObjectName" : "java.lang:type=GarbageCollector,name=ConcurrentMarkSweep"
+  } ]
+}

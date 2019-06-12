@@ -1,0 +1,22 @@
+{
+  "beans" : [ {
+    "name" : "java.lang:type=OperatingSystem",
+    "modelerType" : "sun.management.OperatingSystemImpl",
+    "OpenFileDescriptorCount" : 777,
+    "MaxFileDescriptorCount" : 128000,
+    "CommittedVirtualMemorySize" : 3066982400,
+    "TotalSwapSpaceSize" : 5368705024,
+    "FreeSwapSpaceSize" : 3788533760,
+    "ProcessCpuTime" : 2664620000000,
+    "FreePhysicalMemorySize" : 197496832,
+    "TotalPhysicalMemorySize" : 8203538432,
+    "SystemCpuLoad" : 0.024390243902439025,
+    "ProcessCpuLoad" : 0.0,
+    "AvailableProcessors" : 1,
+    "Arch" : "amd64",
+    "Version" : "3.10.0-327.el7.x86_64",
+    "SystemLoadAverage" : 11.24,
+    "Name" : "Linux",
+    "ObjectName" : "java.lang:type=OperatingSystem"
+  } ]
+}
