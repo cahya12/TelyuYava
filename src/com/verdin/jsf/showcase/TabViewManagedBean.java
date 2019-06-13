@@ -3,7 +3,11 @@ package com.verdin.jsf.showcase;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.servlet.http.HttpSession;
+
 import org.jboss.logging.Logger;
+
+import com.login.SessionUtils;
 
 @ManagedBean
 @SessionScoped
@@ -23,5 +27,10 @@ public class TabViewManagedBean {
 		logger.info("set index "+ index);
 		
 		this.index = index;
+	}
+	public String Logout() {
+		HttpSession session = SessionUtils.getSession();
+		session.invalidate();
+		return "index";
 	}
 }

@@ -2,9 +2,11 @@ package com.login;
 
 import java.io.Serializable;
 
+import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 
@@ -12,7 +14,7 @@ import com.login.LoginDAO;
 import com.login.SessionUtils;
 
 @ManagedBean
-@SessionScoped
+@ViewScoped
 public class Login implements Serializable {
 
 	private static final long serialVersionUID = 1094801825228386363L;
@@ -68,11 +70,8 @@ public class Login implements Serializable {
 		session.invalidate();
 		return "index";
 	}
-	public void save() {
-		FacesContext.getCurrentInstance().addMessage(
-				null,
-				new FacesMessage(FacesMessage.SEVERITY_WARN,
-						"Coba",
-						"Coba"));
-	}
+	public void addMessage(String summary, String detail) {
+        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary, detail);
+        FacesContext.getCurrentInstance().addMessage(null, message);
+    }
 }
