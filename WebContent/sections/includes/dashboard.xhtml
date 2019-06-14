@@ -34,15 +34,44 @@
 					</div>
 
 					<div class="ui-g-12 ui-md-6 ui-lg-6">
-						<p:menuButton value="admin" icon="fa fa-user"
-							style="width:100%; font-size:10pt">
-							<p:menuitem value="Setting" style="font-size:10pt" />
-							<p:menuitem value="Manage YAVA" style="font-size:10pt" />
-							<p:menuitem value="About" style="font-size:10pt" />
-							<p:separator />
-							<p:menuitem value="Sign Out" action="#{login.Logout}"
-								style="font-size:10pt" ajax="false" />
-						</p:menuButton>
+					<p:menuButton value="admin" icon="fa fa-user"
+					style="width:100%; font-size:10pt">
+						<p:menuitem value="Setting" style="font-size:10pt" />
+						<p:menuitem value="Manage YAVA" style="font-size:10pt" />
+						<p:menuitem value="About" style="font-size:10pt" onclick="PF('dlg').show();"/>
+						<p:separator />
+					<p:menuitem value="Sign Out" style="font-size:10pt" />
+					</p:menuButton>
+					<p:dialog widgetVar="dlg" modal="true" header="About" style="width:80%" resizeable="disable">
+						<div class="container">
+							<div class="center-align">
+								<div class="logo col-lg-12">
+									<img class="responsive-img" src="logo-apache-ambari.png" alt="Apache Ambari" title="Apache Ambari"/>
+								</div>
+								<div class ="content col-lg-12">
+									<div class = "project">Apache Ambari</div>
+										<br></br>
+											<span id="il8n-90" style="font-size:10pt">Version</span>
+										<script id="metamorph-5528-start" type="text/x-placeholder"></script>
+										2.7.1.30
+										<script id="metamorph-5528-end" type="text/x-placeholder"></script>
+										<br></br>
+										<br></br>
+										<a href="http://ambari.apache.org/" target="_blank">
+											<span id="il8n-91" style="font-size:10pt">Get Involved!</span>
+										</a>
+										<br></br>
+										<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">
+											<span id="il8n-92" style="font-size:10pt">Licensed under Apache License, Version 2.0</span>
+										</a>
+										<br></br>
+										<a href="https://yava.labs247.id/" target="_blank">
+											<span id="il8n-92" style="font-size:10pt">Yava Labs 247</span>
+										</a> 
+									</div>
+								</div>
+							</div>						
+					</p:dialog> 
 					</div>
 				</div>
 			</f:facet>
