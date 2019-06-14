@@ -12,7 +12,7 @@ public class DataConnect {
 			Connection con = DriverManager.getConnection(
 					"jdbc:postgresql://localhost/login",
 	        		   "postgres",
-	        		   "karinafs");
+	        		   "root");
 			return con;
 		} catch (Exception ex) {
 			System.out.println("Database.getConnection() Error -->"

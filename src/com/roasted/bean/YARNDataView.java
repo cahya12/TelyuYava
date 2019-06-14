@@ -66,10 +66,10 @@ public class YARNDataView implements Serializable{
 		
 		//Using Data AbsoluteCapacity and AvailableMB
 		Double absoluteCapacity = yarnData.getAbsoluteUsedCapacity();
-		Integer available = yarnData.getAvailableMB();
+		Integer availableMB = yarnData.getAvailableMB();
 		
-		//Convert into Double
-		Double availableMB = (double) available;
+		//For trying show the data
+//		Double absoluteCapacity = 1.0;
 		
 		//YARN = AbsoluteCapacity x AvailableMB
 		Double yarnResult = absoluteCapacity * availableMB;
