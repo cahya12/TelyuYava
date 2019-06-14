@@ -21,9 +21,6 @@ import javax.annotation.PostConstruct;
 @ViewScoped
 public class DashboardView implements Serializable {
      
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private DashboardModel model;
      
@@ -41,6 +38,7 @@ public class DashboardView implements Serializable {
         column2.addWidget("memoryUsage");
         column2.addWidget("nameNodeHeap");
         column2.addWidget("ResourceManagerHeap");
+        column2.addWidget("nameYARN");
  
         model.addColumn(column1);
         model.addColumn(column2);

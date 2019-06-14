@@ -247,6 +247,19 @@
 								style="font-size:16pt; font-weight: bold" />
 							<p:poll interval="10" update="persenHBASE" />
 						</p:panel>
+						
+						<p:panel id="nameYARN" header="YARN"
+							style="font-size:14pt; width:448px; height:292px; margin-top: 32px; text-align: center">
+
+							<p:donutChart id="yarn" model="#{yARNDataView.donutModel}"
+								style="width: 100%; height: 224px; stroke: crimson;" />
+							<p:poll interval="10" update="yarn" />
+
+							<h:outputText id="percentageYARN"
+								value="#{yARNDataView._percentageYARN}"
+								style="font-size:16pt; font-weight: bold" />
+							<p:poll interval="10" update="percentageYARN" />
+						</p:panel>
 
 						<!-- End Data Node Volume -->
 
