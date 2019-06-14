@@ -34,15 +34,16 @@
 					</div>
 
 					<div class="ui-g-12 ui-md-6 ui-lg-6">
-					<p:menuButton value="admin" icon="fa fa-user"
-					style="width:100%; font-size:10pt">
-						<p:menuitem value="Setting" style="font-size:10pt" />
-						<p:menuitem value="Manage YAVA" style="font-size:10pt" />
-						<p:menuitem value="About" style="font-size:10pt" onclick="PF('dlg').show();"/>
-						<p:separator />
-					<p:menuitem value="Sign Out" style="font-size:10pt" />
-					</p:menuButton>
-					<p:dialog widgetVar="dlg" modal="true" header="About" style="width:80%" resizeable="disable">
+						<p:menuButton value="admin" icon="fa fa-user"
+							style="width:100%; font-size:10pt">
+							<p:menuitem value="Setting" style="font-size:10pt" />
+							<p:menuitem value="Manage YAVA" style="font-size:10pt" />
+							<p:menuitem value="About" style="font-size:10pt" onclick="PF('dlg').show();"/>
+							<p:separator />
+							<p:menuitem value="Sign Out" action="#{login.Logout}"
+								style="font-size:10pt" ajax="false" />
+						</p:menuButton>
+						<p:dialog widgetVar="dlg" modal="true" header="About" style="width:80%" resizeable="disable">
 						<div class="container">
 							<div class="center-align">
 								<div class="logo col-lg-12">
