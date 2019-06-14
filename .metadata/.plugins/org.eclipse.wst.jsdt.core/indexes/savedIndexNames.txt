@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+/home/apriliawidyas/TelyuYava/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+218489514.index
+2525740845.index
+3134190756.index
+526513142.index
+1778876938.index
