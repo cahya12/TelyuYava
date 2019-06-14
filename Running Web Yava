@@ -5,6 +5,7 @@ Tools yang perlu disiapkan
 - JBoss
 - Eclipse IDE
 - Wildfly-Swarm
+- Postgre SQL
 
 Compile
     - pastikan terhubung dengan wifi chantel02
@@ -14,4 +15,5 @@ Compile
 Run
     - masuk folder target
     - jalankan file java hasil compile dengan $ java -jar ErsteJSF-1.0.0-swarm.jar -s ../project-mysql.yaml
-    - buka browser masukkan localhost:8080/fullPageLayout.xhtml
+    - buka browser masukkan localhost:8585/fullPageLayout.xhtml. Port ganti di POM.xml
+    - user password default : admin admin, ganti di com.login.DataConnect.java
