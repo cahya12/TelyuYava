@@ -68,11 +68,14 @@ public class YARNDataView implements Serializable{
 		Double absoluteCapacity = yarnData.getAbsoluteUsedCapacity();
 		Integer availableMB = yarnData.getAvailableMB();
 		
-		//For trying show the data
-//		Double absoluteCapacity = 1.0;
+		Double yarnResult;
 		
-		//YARN = AbsoluteCapacity x AvailableMB
-		Double yarnResult = absoluteCapacity * availableMB;
+		if( absoluteCapacity == 0.0) {
+			yarnResult = (double) availableMB;
+		} else {
+			//YARN = AbsoluteCapacity x AvailableMB
+			yarnResult = absoluteCapacity * availableMB;
+		}
 		
 		//Show the percentage
 		Double percentageYARN = (absoluteCapacity / availableMB) * 100;
